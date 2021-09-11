@@ -108,7 +108,9 @@ def masuk():
 	except (KeyError,IOError):
 		os.system('clear')
 		logo()
-		print("  '\033[0;92 WA : 081371895399\033[0;95m' ")
+		print '  \033[0;92m|| Created By\033[0;39m :  Gw'
+		print '  \033[0;92m|| Recode By\033[0;39m : Me'
+		print '  \033[0;92m|| FB.me/\033[0;39m : Gilang Sanjaya XD.'
 		token = raw_input(" masukin token nya ngap : ")
 			
 		try:
