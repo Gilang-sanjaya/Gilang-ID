@@ -145,8 +145,8 @@ def menu():
 		print (' × tidak ada koneksi harap sambungkan koneksi anda')
 		sys.exit()
 	logo()
-	print" \033[0;92m  Nama       : [0;39m"+nama
-	print" \033[0;92m  Ip Address : [0;39m"+ip
+	print" \033[0;92m  Nama [0;39m       : "+nama
+	print" \033[0;92m  Ip Address [0;39m : "+ip
 
 	print" \033[0;92m||1.|| \033[0;39m Crack Dari Id Publik"
 	print" \033[0;92m||2.|| \033[0;39m Crack Dari Followers"
