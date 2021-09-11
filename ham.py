@@ -108,11 +108,9 @@ def masuk():
 	except (KeyError,IOError):
 		os.system('clear')
 		logo()
-		print("\033[0;95m Gada Token? Ketik '\033[0;92mxyz\033[0;95m' Untuk Mendapatkan Token Gratis.")
+		print("  '\033[0;92 WA : 081371895399\033[0;95m' ")
 		token = raw_input(" masukin token nya ngap : ")
-		if token == "xyz":
-			os.system("xdg-open https://free.facebook.com/100008065235213/posts/3002983643313781/?app=fbl")
-			exit(" ! Jangan Lupa React Love wak:v")
+			
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
 			a = json.loads(otw.text)
