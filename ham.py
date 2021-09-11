@@ -111,7 +111,9 @@ def masuk():
 		print '  \033[0;92m|| Created By\033[0;39m :  Gw'
 		print '  \033[0;92m|| Recode By\033[0;39m : Me'
 		print '  \033[0;92m|| FB.me/\033[0;39m : Gilang Sanjaya XD.'
-		token = raw_input(" masukin token nya ngap : ")
+		
+		
+		token = raw_input(" TOKEN : ")
 			
 		try:
 			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
@@ -143,20 +145,20 @@ def menu():
 		print (' × tidak ada koneksi harap sambungkan koneksi anda')
 		sys.exit()
 	logo()
-	print" \033[0;95m  NAMA       : "+nama
-	print" \033[0;95m  IP ADDRESS : "+ip
-	print" \033[0;94m  #-----------------------------------#"
-	print" \033[0;96m  [1] CRACK DARI ID PUBLIK"
-	print" \033[0;96m  [2] CRACK DARI FOLLOWERS"
-	print" \033[0;96m  [3] CEK HASIL OPSI"
-	print" \033[0;96m  [4] LIHAT HASIL CRACK"
-	print" \033[0;96m  [0] HAPUS TOKEN"
+	print" \033[0;92m  Nama       : [0;39m"+nama
+	print" \033[0;92m  Ip Address : [0;39m"+ip
+
+	print" \033[0;92m||1.|| \033[0;39m Crack Dari Id Publik"
+	print" \033[0;92m||2.|| \033[0;39m Crack Dari Followers"
+	print" \033[0;92m||3.|| \033[0;39m Cek Hasil Opsi"
+	print" \033[0;92m||4.|| \033[0;39m Lihat Hasil Crack"
+	print" \033[0;92m||0.|| \033[0;39m Hapus Token"
 	print
 	pilih()
 	
 ###PILIHHH ###
 def pilih():
-	kontol = raw_input("\033[1;95m  ┌─[Ilh4m | Gntenk└──╼ ❯❯❯ \033[92m :\033[1;92m ")
+	kontol = raw_input("\033[0;92mchoose \033[0;39m  ")
 	if kontol == "":
 		menu()
 	elif kontol == "1":
