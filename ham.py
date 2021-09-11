@@ -66,7 +66,7 @@ def logo():
 
 
 
-             \033[0;92m{ GILANG SANJAYA XD. }\033[0;39m          \n""""")
+                  \033[0;92m{ GILANG SANJAYA XD. }\033[0;39m          \n""""")
 id = []
 cp = []
 ok = []
